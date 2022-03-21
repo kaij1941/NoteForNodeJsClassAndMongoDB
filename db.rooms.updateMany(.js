@@ -1,0 +1,10 @@
+db.rooms.updateMany(
+    {
+        "rating":4.3
+    },
+    {
+        "$set":{
+            "rating":0
+        }
+    }
+)
