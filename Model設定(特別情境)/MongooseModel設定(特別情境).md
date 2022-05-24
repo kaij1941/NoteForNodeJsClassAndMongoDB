@@ -36,9 +36,9 @@ new Schema({
   }
 });
 ```
-作法參考至:
-主題:How to add required validation when an other field has an specific value?
-網址: https://github.com/Automattic/mongoose/issues/5119
+作法參考至:<br/>
+主題:How to add required validation when an other field has an specific value? <br/>
+網址: https://github.com/Automattic/mongoose/issues/5119 <br/>
 
 ####  MongoDB實作LeftJoin的功能
 例如SQL語法
@@ -58,7 +58,7 @@ db.getCollection('user').aggregate([
   }])
 但這種寫法如參考資料所數會有 超過 BSON 單筆 16MB 的限制，資料就會查不出來的問題，會噴出如下錯誤
 
-Aggregate $lookup Total size of documents in matching pipeline exceeds maximum document size
+> Aggregate $lookup Total size of documents in matching pipeline exceeds maximum document size
 
 可以參考資料建議增加pipline的模式減少不必要的資料
 改成
@@ -92,6 +92,6 @@ db.getCollection('user').aggregate([
 透過 pipeline 的 $match 來作為 on 的條件，搭配 pipeline 的 aggregate 能力，可以在做任何 $sort, $group 等語法，來讓最後 JOIN 進 document 的內容選擇只要你需要用到的資料
 
 
-作法參考至:
-主題:MongoDB 透過 lookup pipeline 實踐 Left Join
-網址: https://mlwmlw.org/2018/10/mongodb-left-join/
+作法參考至:<br/>
+主題:MongoDB 透過 lookup pipeline 實踐 Left Join <br/>
+網址: https://mlwmlw.org/2018/10/mongodb-left-join/ <br/>
